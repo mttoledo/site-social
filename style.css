@@ -6,9 +6,10 @@
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
     background-color: black;
+    background: url(imagens/background.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -22,6 +23,38 @@ section#iphone {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    size: 500px 500px;
-    background-color: aliceblue;
+    height: 627px;
+    width: 311px;
+    background: url(imagens/frame-iphone.png) no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 21.9px;
+    height: 471px;
+    width: 267px;
+}
+
+section#social {
+    text-align: right;
+}
+
+section#social > a > img#first {
+    margin-top: 20px;
+}
+
+section#social img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+
+section#social img:hover {
+    border: 2px solid white;
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.601);
+    transition: transform 0.5s;
 }
